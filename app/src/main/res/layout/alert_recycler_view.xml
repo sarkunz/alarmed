@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_weight="1"
+    >
+
+    <Switch
+        android:id="@+id/alertToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/alertName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alert Name"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alerts:" />
+            <TextView
+                android:id="@+id/alertsWho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Authorities"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Word:" />
+            <TextView
+                android:id="@+id/alertWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Something"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listening:" />
+            <TextView
+                android:id="@+id/whenListening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MTWThF 5:00-5:30"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
