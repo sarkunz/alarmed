@@ -29,7 +29,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Alert Name"
-            android:textSize="16dp"/>
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryDark"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,12 +39,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Alerts:" />
+                android:text="Alerts:"
+                android:textColor="@color/colorPrimaryDark"/>
             <TextView
                 android:id="@+id/alertsWho"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Authorities"
+                android:text="Mandi Diaz, Brian Kunzler"
                 android:paddingLeft="10dp"/>
         </LinearLayout>
 
@@ -54,12 +56,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Word:" />
+                android:text="Phrase:"
+                android:textColor="@color/colorPrimaryDark"/>
             <TextView
                 android:id="@+id/alertWord"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Something"
+                android:text="My secret alert phrase"
                 android:paddingLeft="10dp"/>
         </LinearLayout>
 
@@ -70,7 +73,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Listening:" />
+                android:text="Listening:"
+                android:textColor="@color/colorPrimaryDark"/>
             <TextView
                 android:id="@+id/whenListening"
                 android:layout_width="wrap_content"

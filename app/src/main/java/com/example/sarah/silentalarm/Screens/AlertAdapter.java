@@ -35,12 +35,11 @@ class AlertAdapter extends RecyclerView.Adapter<AlertAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull AlertAdapter.ViewHolder viewHolder, int position) {
-
         Alert alert = alertList.get(position);
         viewHolder.alertName.setText(alert.getName());
-        //viewHolder.alertsWho.setText(alert.getContacts());
-        //viewHolder.alertWord.setText(alert.getWord());
-        //viewHolder.whenListening.setText(alert.getWhen());
+        viewHolder.alertsWho.setText(alert.getContactString());
+        viewHolder.alertWord.setText(alert.getWord());
+        viewHolder.whenListening.setText(alert.getDays() + " " + alert.getTimes());
     }
 
     @Override

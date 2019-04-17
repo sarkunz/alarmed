@@ -49,7 +49,11 @@ public class User {
     }
 
     public void setHardCodedAlerts(){
-        String message = getName() + " is killing her presentation. Clapping is probably in order.";
-        alerts.add(new Alert("Presentation Alert", "8015896710", false, "", message, false, true));
+        String message = getName() + " has sounded an alert via ALARMED. Please ensure they are safe.";
+        alerts.add(new Alert("Sarah's Alert", "(555)543-2100, (555)987-6543 ", false, "'Train'", message,
+                false, true, "MTWThF", "5:00-5:30PM"));
+        message = "this is a message.";
+        alerts.add(new Alert("Scary Alert", "Authorities", true, "Shake", message,
+                true, true, "MWF", "9:00-10:00PM"));
     }
 }

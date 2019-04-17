@@ -12,8 +12,10 @@ public class Alert implements Serializable {
     private Boolean sendLoc;
     //locations[]
     //times[]
+    private String days;
+    private String times;
     private Boolean alwaysOn; //true
-    private Boolean enabled; //ture
+    private Boolean enabled; //tur
 
     public Alert(){
         name = "";
@@ -24,9 +26,12 @@ public class Alert implements Serializable {
         sendLoc = false;
         alwaysOn = true;
         enabled = true;
+        days = "MTWThF";
+        times = "All Day";
     }
 
-    public Alert(String name, String contact, Boolean authorities, String word, String message, Boolean sendLoc, Boolean alwaysOn){
+    public Alert(String name, String contact, Boolean authorities, String word, String message,
+                 Boolean sendLoc, Boolean alwaysOn, String days, String times){
         this.name = name;
         this.contacts = new ArrayList<>();
         this.contacts.add(contact);
@@ -36,6 +41,8 @@ public class Alert implements Serializable {
         this.sendLoc = sendLoc;
         this.alwaysOn = alwaysOn;
         this.enabled = true;
+        this.days = days;
+        this.times = times;
     }
 
     public String getName() {
@@ -48,6 +55,14 @@ public class Alert implements Serializable {
 
     public ArrayList<String> getContacts() {
         return contacts;
+    }
+
+    public String getContactString(){
+        String allContacts = "";
+        for(String name : contacts){
+            allContacts += name + " ";
+        }
+        return  allContacts;
     }
 
     public void setContacts(ArrayList<String> contacts) {
@@ -110,5 +125,21 @@ public class Alert implements Serializable {
 
     public void setSendLoc(Boolean sendLoc) {
         this.sendLoc = sendLoc;
+    }
+
+    public String getDays() {
+        return days;
+    }
+
+    public void setDays(String days) {
+        this.days = days;
+    }
+
+    public String getTimes() {
+        return times;
+    }
+
+    public void setTimes(String times) {
+        this.times = times;
     }
 }

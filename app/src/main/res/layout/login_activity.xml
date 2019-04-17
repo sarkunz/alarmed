@@ -11,21 +11,21 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ALARMED"
-            android:gravity="center"
-            android:padding="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="575dp"
+            android:src="@drawable/logo_blue" />
 
         <Button
             android:id="@+id/loginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="login"
-            android:onClick="switchToAlertsActivity"
             android:layout_gravity="center"
-            android:layout_margin="30dp"/>
+            android:layout_margin="30dp"
+            android:onClick="switchToAlertsActivity"
+            android:text="login"
+            android:textColor="#FFF"
+            android:backgroundTint="@color/colorAccent"/>
 
     </LinearLayout>
 

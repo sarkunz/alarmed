@@ -41,8 +41,8 @@ public class EditActivity extends AppCompatActivity {
     private void getVars(){
         nameBox = (EditText) findViewById(R.id.editName);
         wordBox = (EditText) findViewById(R.id.editAlertWord);
-        authoritiesCheck = (CheckBox) findViewById(R.id.authoritiesCheck);
-        contactsCheck = (CheckBox) findViewById(R.id.contactsCheck);
+//        authoritiesCheck = (CheckBox) findViewById(R.id.authoritiesCheck);
+//        contactsCheck = (CheckBox) findViewById(R.id.contactsCheck);
         messageBox = (EditText) findViewById(R.id.editMessage);
         sendLocSwitch = (Switch) findViewById(R.id.sendLocSwitch);
         customLocCheck = (CheckBox) findViewById(R.id.customLocCheck);
